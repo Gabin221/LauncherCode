@@ -13,10 +13,10 @@ echo "Nom du fichier : $nom_sans_extension"
 echo "Extension du fichier : $extension"
 
 case "$extension" in
-   "html") touch "test.$extension" 
+   "html") touch nom_fichier 
    echo "fichier créé"
    echo "fichier initialisé"
-   rm "test.$extension"
+   rm nom_fichier
    echo "fichier supprimé"
    ;;
    "py") touch "test.$extension"
