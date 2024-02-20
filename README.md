@@ -1,2 +1,33 @@
 # CodeInitiator
- 
+
+## Présentation
+
+Ce petit projet est une initiative personnelle permettant d'avoir un script sous linux permettant de créer un fichier qui est déjà initialisé. Ce projet est né car je n'ai pas trouvé de solution native sur linux permettant d'initialiser un fichier. Il sert a priori uniquement aux développeurs qui veulent avec une uniquement commande créer un fichier ayant déjà du contenu. Par exemple pour créer un fichier <b>.html</b> il contiendra déjà le texte suivant:  
+```html
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr">
+	<head>
+		<title>Title of the page</title>
+	</head>
+	<body>
+		<h1>Hello world!</h1>
+	</body>
+</html>
+```
+
+## Les langages pris en compte actuellement
+
+Je n'ai pas essayé de créer un script qui prend en compte 100% des langages existants, uniquement les principaux et ceux que j'utilise le plus:  
+
++ C
+    + C
+    + C++
++ H
+    + HTML
++ P
+    + Python
+
+## Utilisation de ce projet
+
+Je vous conseille de créer un dossier <b>bin</b> dans votre
