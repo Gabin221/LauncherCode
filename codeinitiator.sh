@@ -19,7 +19,8 @@ case "$extension" in
    echo "$nom_fichier was created"
    ;;
    "py") 
-   touch "test.$extension"
+   echo -e "def hello():\n\tprint("Hello World!")\n\n\nif __name__ == "__main__":\n\thello()" > $nom_fichier
+   echo "$nom_fichier was created"
    ;;
    "cpp") 
    touch "test.$extension"
