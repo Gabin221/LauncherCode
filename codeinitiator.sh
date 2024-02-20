@@ -13,14 +13,15 @@ echo "Nom du fichier : $nom_sans_extension"
 echo "Extension du fichier : $extension"
 
 case "$extension" in
-   "html") touch nom_fichier 
-   echo "fichier créé"
+   "html") 
+   touch $nom_fichier 
+   echo -e "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>Titre de la page</title>\n\t</head>\n\t<body>\n\t\t<h1>Bonjour, monde!</h1>\n\t</body>\n</html>" > $nom_fichier
    echo "fichier initialisé"
-   rm nom_fichier
-   echo "fichier supprimé"
    ;;
-   "py") touch "test.$extension"
+   "py") 
+   touch "test.$extension"
    ;;
-   "cpp") touch "test.$extension"
+   "cpp") 
+   touch "test.$extension"
    ;;
 esac
