@@ -1,7 +1,26 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-STR="index.html"
-echo "Le premier argument est : $1"
-for L in $(seq 1 ${#STR}); do
-    echo $(echo $STR | cut -c$L)
-done
+# Récupérer le nom du fichier à partir du premier argument
+nom_fichier="$1"
+
+# Extraire le nom du fichier (sans extension) et son extension
+nom_base=$(basename "$nom_fichier")
+extension="${nom_base##*.}"
+nom_sans_extension="${nom_base%.*}"
+
+# Afficher le nom du fichier et son extension
+echo "Nom du fichier : $nom_sans_extension"
+echo "Extension du fichier : $extension"
+
+case "$extension" in
+   "html") touch "test.$extension" 
+   echo "fichier créé"
+   echo "fichier initialisé"
+   rm "test.$extension"
+   echo "fichier supprimé"
+   ;;
+   "py") touch "test.$extension"
+   ;;
+   "cpp") touch "test.$extension"
+   ;;
+esac
