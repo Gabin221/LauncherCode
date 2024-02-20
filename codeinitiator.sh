@@ -9,14 +9,14 @@ extension="${nom_base##*.}"
 nom_sans_extension="${nom_base%.*}"
 
 # Afficher le nom du fichier et son extension
-echo "Nom du fichier : $nom_sans_extension"
-echo "Extension du fichier : $extension"
+# echo "Nom du fichier : $nom_sans_extension"
+# echo "Extension du fichier : $extension"
 
 case "$extension" in
    "html") 
    touch $nom_fichier 
-   echo -e "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>Titre de la page</title>\n\t</head>\n\t<body>\n\t\t<h1>Bonjour, monde!</h1>\n\t</body>\n</html>" > $nom_fichier
-   echo "fichier initialisé"
+   echo -e "<!DOCTYPE html>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<html lang=\"fr\">\n\t<head>\n\t\t<title>Titre de la page</title>\n\t</head>\n\t<body>\n\t\t<h1>Bonjour, monde!</h1>\n\t</body>\n</html>" > $nom_fichier
+   echo "$nom_fichier was created"
    ;;
    "py") 
    touch "test.$extension"
