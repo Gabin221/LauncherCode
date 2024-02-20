@@ -27,6 +27,7 @@ Je n'ai pas essayé de créer un script qui prend en compte 100% des langages ex
     + HTML
 + P
     + Python
+	+ PHP
 
 ## Utilisation de ce projet
 
