@@ -24,10 +24,23 @@ case "$extension" in
    echo "$nom_fichier was created"
    ;;
    "py") 
+   touch $nom_fichier 
    echo -e "def hello():\n\tprint("Hello World!")\n\n\nif __name__ == "__main__":\n\thello()" > $nom_fichier
    echo "$nom_fichier was created"
    ;;
    "cpp") 
-   touch "test.$extension"
+   touch $nom_fichier 
+   echo -e "#include <iostream>\n\nint main() {\n\tcout << \"Hello World!\";\n\treturn 0;\n}" > $nom_fichier
+   echo "$nom_fichier was created"
+   ;;
+   "cc") 
+   touch $nom_fichier 
+   echo -e "#include <iostream>\n\nint main() {\n\tcout << \"Hello World!\";\n\treturn 0;\n}" > $nom_fichier
+   echo "$nom_fichier was created"
+   ;;
+   "c") 
+   touch $nom_fichier 
+   echo -e "#include <stdio.h>\n\nint main() {\n\tprintf(\"Hello, World!\");\n\treturn 0;\n}" > $nom_fichier
+   echo "$nom_fichier was created"
    ;;
 esac
