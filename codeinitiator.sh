@@ -45,7 +45,7 @@ case "$extension" in
    ;;
    "tex") 
    touch $nom_fichier 
-   echo -e "\documentclass[10pt,a4paper]{article}\n\usepackage[utf8]{inputenc}\n\usepackage[french]{babel}\n\usepackage[T1]{fontenc}\n\usepackage{amsmath}\n\usepackage{amsfonts}\n\usepackage{amssymb}\n\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}\n\n\begin{document}\nHello World!\n\end{document}" > $nom_fichier
+   echo -e "\documentclass[10pt,a4paper]{article}\n\usepackage[utf8]{inputenc}\n\usepackage[french]{babel}\n\usepackage[T1]{fontenc}\n\usepackage{amsmath}\n\usepackage{amsfonts}\n\usepackage{amssymb}\n\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}\n\n\\\begin{document}\nHello World!\n\\\end{document}" > $nom_fichier
    echo "$nom_fichier was created"
    ;;
 esac
