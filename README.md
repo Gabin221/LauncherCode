@@ -25,6 +25,8 @@ Je n'ai pas essayé de créer un script qui prend en compte 100% des langages ex
     + C++ (fonctionne que l'extension soit <i>cpp</i> ou <i>cc</i>)
 + H
     + HTML
++ L
+	+ LaTeX
 + P
     + Python
 	+ PHP
