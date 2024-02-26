@@ -30,17 +30,17 @@ case "$extension" in
    ;;
    "cpp") 
    touch $nom_fichier 
-   echo -e "#include <iostream>\n\nint main() {\n\tcout << \"Hello World!\";\n\treturn 0;\n}" > $nom_fichier
+   echo -e "#include <iostream>\n\nusing namespace std;\n\nint main() {\n\tcout << \"Hello World!\" << endl;\n\treturn 0;\n}" > $nom_fichier
    echo "$nom_fichier was created"
    ;;
    "cc") 
    touch $nom_fichier 
-   echo -e "#include <iostream>\n\nint main() {\n\tcout << \"Hello World!\";\n\treturn 0;\n}" > $nom_fichier
+   echo -e "#include <iostream>\n\nusing namespace std;\n\nint main() {\n\tcout << \"Hello World!\" << endl;\n\treturn 0;\n}" > $nom_fichier
    echo "$nom_fichier was created"
    ;;
    "c") 
    touch $nom_fichier 
-   echo -e "#include <stdio.h>\n\nint main() {\n\tprintf(\"Hello, World!\");\n\treturn 0;\n}" > $nom_fichier
+   echo -e "#include <stdio.h>\n\nint main() {\n\tprintf(\"Hello, World!\\\n\");\n\treturn 0;\n}" > $nom_fichier
    echo "$nom_fichier was created"
    ;;
    "tex") 
