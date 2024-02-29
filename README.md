@@ -1,4 +1,4 @@
-# CodeInitiator
+# BeginnerCode
 
 ## Présentation
 
@@ -33,4 +33,4 @@ Je n'ai pas essayé de créer un script qui prend en compte 100% des langages ex
 
 ## Utilisation de ce projet
 
-Je vous conseille de créer un dossier <b>bin</b> dans votre répertoire personnel, fermer votre session en cours afin de recharger votre path et mettre ce script dans votre <b>~/bin</b>. Il faudra vous assurer également que le script ai les droits d'exécution en utilisant la commande ```chmod +x codeinitiator.sh``` dans le répertoire contenant ce script.
+Je vous conseille de créer un dossier <b>bin</b> dans votre répertoire personnel, fermer votre session en cours afin de recharger votre path et mettre ce script dans votre <b>~/bin</b>. Il faudra vous assurer également que le script ai les droits d'exécution en utilisant la commande ```chmod +x beginnercode.sh``` dans le répertoire contenant ce script.
