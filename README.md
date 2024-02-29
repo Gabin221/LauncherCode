@@ -2,7 +2,7 @@
 
 ## Présentation
 
-Ce petit projet est une initiative personnelle permettant d'avoir un script sous linux permettant de créer un fichier qui est déjà initialisé. Ce projet est né car je n'ai pas trouvé de solution native sur linux permettant d'initialiser un fichier. Il sert a priori uniquement aux développeurs qui veulent avec une uniquement commande créer un fichier ayant déjà du contenu. Par exemple pour créer un fichier <b>.html</b> il contiendra déjà le texte suivant:  
+Ce petit projet est une initiative personnelle permettant d'avoir un script sous linux permettant de créer un fichier qui est déjà initialisé. Ce projet est né car je n'ai pas trouvé de solution native sur linux permettant d'initialiser un fichier. Il a pour objectif d'aider les développeurs sous Linux qui veulent avec une unique commande créer un fichier étant initialisé. Par exemple pour créer un fichier <b>.html</b> il contiendra déjà le texte suivant:  
 ```html
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,4 +33,5 @@ Je n'ai pas essayé de créer un script qui prend en compte 100% des langages ex
 
 ## Utilisation de ce projet
 
-Je vous conseille de créer un dossier <b>bin</b> dans votre répertoire personnel, fermer votre session en cours afin de recharger votre path et mettre ce script dans votre <b>~/bin</b>. Il faudra vous assurer également que le script ai les droits d'exécution en utilisant la commande ```chmod +x beginnercode.sh``` dans le répertoire contenant ce script.
+Je vous conseille de créer un dossier <b>bin</b> dans votre répertoire personnel, fermer votre session en cours afin de recharger votre path et mettre ce script dans votre <b>~/bin</b>. Il faudra vous assurer également que le script ai les droits d'exécution en utilisant la commande ```chmod +x beginnercode.sh``` dans le répertoire contenant ce script.  
+Bien évidemment vous pouvez l'utiliser et le modifier comme bon vous semble.
