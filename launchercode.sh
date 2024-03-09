@@ -1,16 +1,10 @@
 #!/bin/bash
 
-# Récupérer le nom du fichier à partir du premier argument
 nom_fichier="$1"
 
-# Extraire le nom du fichier (sans extension) et son extension
 nom_base=$(basename "$nom_fichier")
 extension="${nom_base##*.}"
 nom_sans_extension="${nom_base%.*}"
-
-# Afficher le nom du fichier et son extension
-# echo "Nom du fichier : $nom_sans_extension"
-# echo "Extension du fichier : $extension"
 
 case "$extension" in
    "html") 

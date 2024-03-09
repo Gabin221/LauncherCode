@@ -1,36 +1,25 @@
 # LauncherCode
 
-## Présentation
+This script takes a filename as an argument and generates a file based on its extension. Depending on the extension provided, different types of files will be generated:
 
-Ce petit projet est une initiative personnelle permettant d'avoir un script sous linux permettant de créer un fichier qui est déjà initialisé. Ce projet est né car je n'ai pas trouvé de solution native sur linux permettant d'initialiser un fichier. Il a pour objectif d'aider les développeurs sous Linux qui veulent avec une unique commande créer un fichier étant initialisé. Par exemple pour créer un fichier <b>.html</b> il contiendra déjà le texte suivant:  
-```html
-<!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<html lang="fr">
-	<head>
-		<title>Title of the page</title>
-	</head>
-	<body>
-		<h1>Hello world!</h1>
-	</body>
-</html>
+- For **.html** and **.php** extensions, an HTML file with a basic structure will be created.
+- For **.py** extension, a Python script will be created with a basic "Hello World!" function.
+- For **.cpp** and **.cc** extensions, a C++ file will be created with a basic "Hello World!" program.
+- For **.c** extension, a C file will be created with a basic "Hello, World!" program.
+- For **.tex** extension, a LaTeX file will be created with a basic document structure.
+
+To use this script, run it with the desired filename as an argument, like so:
+
+```shell
+./launchercode.sh filename.extension
 ```
 
-## Les langages pris en compte actuellement
+This will generate the corresponding file based on the provided extension.
 
-Je n'ai pas essayé de créer un script qui prend en compte 100% des langages existants, uniquement les principaux et ceux que j'utilise le plus:  
+Note: Ensure the script is executable. If not, make it executable using the following command:
 
-+ C
-    + C
-    + C++ (fonctionne que l'extension soit <i>cpp</i> ou <i>cc</i>)
-+ H
-    + HTML
-+ L
-	+ LaTeX
-+ P
-    + Python
-	+ PHP
+```shell
+chmod +x launchercode.sh
+```
 
-## Utilisation de ce projet
-
-Je vous conseille de créer un dossier <b>bin</b> dans votre répertoire personnel, fermer votre session en cours afin de recharger votre path et mettre ce script dans votre <b>~/bin</b>. Il faudra vous assurer également que le script ai les droits d'exécution en utilisant la commande ```chmod +x launchercode.sh``` dans le répertoire contenant ce script.  
+Additionally, to use this script from anywhere, you can create a bin directory in your home directory (~) and move the script there. After that, reload your session. This way, the script will be executable from any location within your user environment.
