@@ -1,6 +1,6 @@
 # LauncherCode
 
-This script takes a filename as an argument and generates a file based on its extension. Depending on the extension provided, different types of files will be generated:
+This script one or more filenames as arguments and generates a file based on its extension. Depending on the extension provided, different types of files will be generated:
 
 - For **.html** and **.php** extensions, an HTML file with a basic structure will be created.
 - For **.py** extension, a Python script will be created with a basic "Hello World!" function.
