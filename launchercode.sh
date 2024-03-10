@@ -9,7 +9,7 @@ do
     case "$extension" in
        "c#") 
        touch $nom_fichier 
-       echo -e "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\nusing System.Threading.Tasks;\n\nnamespace ConsoleApp1\n{\nclass Program\n{\nstatic void Main(string[] args)\n{\nConsole.WriteLine("Hello, world!");\nConsole.ReadLine();\n}\n}\n}" > $nom_fichier
+       echo -e "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\nusing System.Threading.Tasks;\n\nnamespace ConsoleApp1\n{\n\tclass Program\n\t{\n\tstatic void Main(string[] args)\n\t{\n\t\tConsole.WriteLine("Hello, world!");\n\t\tConsole.ReadLine();\n\t}\n\t}\n}" > $nom_fichier
        ;;
        "html") 
        touch $nom_fichier 
