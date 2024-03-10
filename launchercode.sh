@@ -7,6 +7,10 @@ do
     nom_sans_extension="${nom_base%.*}"
 
     case "$extension" in
+       "c#") 
+       touch $nom_fichier 
+       echo -e "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\nusing System.Threading.Tasks;\n\nnamespace ConsoleApp1\n{\nclass Program\n{\nstatic void Main(string[] args)\n{\nConsole.WriteLine("Hello, world!");\nConsole.ReadLine();\n}\n}\n}" > $nom_fichier
+       ;;
        "html") 
        touch $nom_fichier 
        echo -e "<!DOCTYPE html>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<html lang=\"fr\">\n\t<head>\n\t\t<title>Title of the page</title>\n\t</head>\n\t<body>\n\t\t<h1>Hello world!</h1>\n\t</body>\n</html>" > $nom_fichier
