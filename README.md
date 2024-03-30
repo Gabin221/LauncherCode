@@ -8,6 +8,8 @@ This script one or more filenames as arguments and generates a file based on its
 - For **.c** extension, a C file will be created with a basic "Hello, World!" program.
 - For **.cs** extension, a C# file will be created with a basic "Hello, World!" program.
 - For **.tex** extension, a LaTeX file will be created with a basic document structure.
+- For **.kt** extension, a Kotlin file will be created with a basic "Hello, World!" program.
+- For **.sh** extension, a Shell file will be created with a basic "Hello, World!" program.
 
 To use this script, run it with the desired filename as an argument, like so:
 

@@ -15,6 +15,10 @@ do
        touch $nom_fichier 
        echo -e "<!DOCTYPE html>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<html lang=\"fr\">\n\t<head>\n\t\t<title>Title of the page</title>\n\t</head>\n\t<body>\n\t\t<h1>Hello world!</h1>\n\t</body>\n</html>" > $nom_fichier
        ;;
+       "kt") 
+       touch $nom_fichier 
+       echo -e "fun main(args : Array<String>) {\n\tprintln(\"Hello, World!\")\n}" > $nom_fichier
+       ;;
        "php") 
        touch $nom_fichier 
        echo -e "<!DOCTYPE html>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<html lang=\"fr\">\n\t<head>\n\t\t<title>Title of the page</title>\n\t</head>\n\t<body>\n\t\t<h1>Hello world!</h1>\n\t</body>\n</html>" > $nom_fichier
@@ -22,6 +26,10 @@ do
        "py") 
        touch $nom_fichier 
        echo -e "def hello():\n\tprint(\"Hello World!\")\n\n\nif __name__ == \"__main__\":\n\thello()" > $nom_fichier
+       ;;
+       "sh") 
+       touch $nom_fichier 
+       echo -e "echo \"Hello, World!\"" > $nom_fichier
        ;;
        "cpp") 
        touch $nom_fichier 
