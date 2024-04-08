@@ -7,6 +7,18 @@ do
     nom_sans_extension="${nom_base%.*}"
 
     case "$extension" in
+       "c") 
+       touch $nom_fichier 
+       echo -e "#include <stdio.h>\n\nint main() {\n\tprintf(\"Hello, World!\\\n\");\n\treturn 0;\n}" > $nom_fichier
+       ;;
+       "cc") 
+       touch $nom_fichier 
+       echo -e "#include <iostream>\n\nusing namespace std;\n\nint main() {\n\tcout << \"Hello World!\" << endl;\n\treturn 0;\n}" > $nom_fichier
+       ;;
+       "cpp") 
+       touch $nom_fichier 
+       echo -e "#include <iostream>\n\nusing namespace std;\n\nint main() {\n\tcout << \"Hello World!\" << endl;\n\treturn 0;\n}" > $nom_fichier
+       ;;
        "cs") 
        touch $nom_fichier 
        echo -e "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\nusing System.Threading.Tasks;\n\nnamespace ConsoleApp1\n{\n\tclass Program\n\t{\n\tstatic void Main(string[] args)\n\t{\n\t\tConsole.WriteLine("Hello, world!");\n\t\tConsole.ReadLine();\n\t}\n\t}\n}" > $nom_fichier
@@ -30,18 +42,6 @@ do
        "sh") 
        touch $nom_fichier 
        echo -e "echo \"Hello, World!\"" > $nom_fichier
-       ;;
-       "cpp") 
-       touch $nom_fichier 
-       echo -e "#include <iostream>\n\nusing namespace std;\n\nint main() {\n\tcout << \"Hello World!\" << endl;\n\treturn 0;\n}" > $nom_fichier
-       ;;
-       "cc") 
-       touch $nom_fichier 
-       echo -e "#include <iostream>\n\nusing namespace std;\n\nint main() {\n\tcout << \"Hello World!\" << endl;\n\treturn 0;\n}" > $nom_fichier
-       ;;
-       "c") 
-       touch $nom_fichier 
-       echo -e "#include <stdio.h>\n\nint main() {\n\tprintf(\"Hello, World!\\\n\");\n\treturn 0;\n}" > $nom_fichier
        ;;
        "tex") 
        touch $nom_fichier 
