@@ -34,6 +34,11 @@ do
        "java") 
        touch $nom_fichier
        echo -e "class HelloWorld {\n\tpublic static void main(String args[])\n\t{\n\t\tSystem.out.println(\"Hello, World\");\n\t}\n}" > $nom_fichier
+       ;;
+       "jl") 
+       touch $nom_fichier 
+       echo -e "print(\"Hello World!\")" > $nom_fichier
+       ;;
        "kt") 
        touch $nom_fichier 
        echo -e "fun main(args : Array<String>) {\n\tprintln(\"Hello, World!\")\n}" > $nom_fichier
@@ -45,6 +50,10 @@ do
        "py") 
        touch $nom_fichier 
        echo -e "def hello():\n\tprint(\"Hello World!\")\n\n\nif __name__ == \"__main__\":\n\thello()" > $nom_fichier
+       ;;
+       "Scala") 
+       touch $nom_fichier 
+       echo -e "object Geeks\n{\n\tdef main(args: Array[String])\n\t{\n\t\tprintln("Hello World!")\n\t}\n} " > $nom_fichier
        ;;
        "sh") 
        touch $nom_fichier 
