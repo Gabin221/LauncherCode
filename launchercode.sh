@@ -7,6 +7,10 @@ do
     nom_sans_extension="${nom_base%.*}"
 
     case "$extension" in
+       "asm") 
+       touch $nom_fichier 
+       echo -e "\tglobal _main\n\textern _printf\n\n\tsection .text\n_main:\n\tpush    message\n\tcall    _printf\n\tadd        esp, 4\nmessage:\n\tdb    \"Hello World!\", 10, 0" > $nom_fichier
+       ;;
        "c") 
        touch $nom_fichier 
        echo -e "#include <stdio.h>\n\nint main() {\n\tprintf(\"Hello, World!\\\n\");\n\treturn 0;\n}" > $nom_fichier
@@ -90,6 +94,10 @@ do
        "py") 
        touch $nom_fichier 
        echo -e "def hello():\n\tprint(\"Hello World!\")\n\n\nif __name__ == \"__main__\":\n\thello()" > $nom_fichier
+       ;;
+       "rb") 
+       touch $nom_fichier 
+       echo -e "puts \"Hello, World!\"" > $nom_fichier
        ;;
        "sc") 
        touch $nom_fichier 
