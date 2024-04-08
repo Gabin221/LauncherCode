@@ -7,6 +7,10 @@ do
     nom_sans_extension="${nom_base%.*}"
 
     case "$extension" in
+       "alg") 
+       touch $nom_fichier 
+       echo -e "BEGIN DISPLAY(\"Hello World!\") END." > $nom_fichier
+       ;;
        "asm") 
        touch $nom_fichier 
        echo -e "\tglobal _main\n\textern _printf\n\n\tsection .text\n_main:\n\tpush    message\n\tcall    _printf\n\tadd        esp, 4\nmessage:\n\tdb    \"Hello World!\", 10, 0" > $nom_fichier
@@ -22,6 +26,10 @@ do
        "cc") 
        touch $nom_fichier 
        echo -e "#include <iostream>\n\nusing namespace std;\n\nint main() {\n\tcout << \"Hello World!\" << endl;\n\treturn 0;\n}" > $nom_fichier
+       ;;
+       "cl") 
+       touch $nom_fichier 
+       echo -e "(print \"Hello World!\")" > $nom_fichier
        ;;
        "cob") 
        touch $nom_fichier 
@@ -51,6 +59,38 @@ do
        touch $nom_fichier 
        echo -e "program HelloWorld;\nbegin\n\tWriteLn(\"Hello World!\");\nend." > $nom_fichier
        ;;
+       "f") 
+       touch $nom_fichier 
+       echo -e "program helloworld\n\tprint *, \"Hello World!\"\nend program helloworld" > $nom_fichier
+       ;;
+       "f90") 
+       touch $nom_fichier 
+       echo -e "program helloworld\n\tprint *, \"Hello World!\"\nend program helloworld" > $nom_fichier
+       ;;
+       "fasl") 
+       touch $nom_fichier 
+       echo -e "(print \"Hello World!\")" > $nom_fichier
+       ;;
+       "for") 
+       touch $nom_fichier 
+       echo -e "program helloworld\n\tprint *, \"Hello World!\"\nend program helloworld" > $nom_fichier
+       ;;
+       "fs") 
+       touch $nom_fichier 
+       echo -e "printfn \"Hello World!\"" > $nom_fichier
+       ;;
+       "fsi") 
+       touch $nom_fichier 
+       echo -e "printfn \"Hello World!\"" > $nom_fichier
+       ;;
+       "fsscript") 
+       touch $nom_fichier 
+       echo -e "printfn \"Hello World!\"" > $nom_fichier
+       ;;
+       "fsx") 
+       touch $nom_fichier 
+       echo -e "printfn \"Hello World!\"" > $nom_fichier
+       ;;
        "go") 
        touch $nom_fichier 
        echo -e "package main\n\nimport "fmt";\n\nfunc main() {\n\tfmt.Println(\"Hello World!\")\n}" > $nom_fichier
@@ -71,13 +111,29 @@ do
        touch $nom_fichier 
        echo -e "print(\"Hello World!\")" > $nom_fichier
        ;;
+       "js") 
+       touch $nom_fichier 
+       echo -e "console.log(\"Hello World!\")" > $nom_fichier
+       ;;
        "kt") 
        touch $nom_fichier 
        echo -e "fun main(args : Array<String>) {\n\tprintln(\"Hello, World!\")\n}" > $nom_fichier
        ;;
+       "l") 
+       touch $nom_fichier 
+       echo -e "(print \"Hello World!\")" > $nom_fichier
+       ;;
        "lhs") 
        touch $nom_fichier 
        echo -e "module Main where\n\nmain :: IO ()\nmain = putStrLn \"Hello World!\"" > $nom_fichier
+       ;;
+       "lisp") 
+       touch $nom_fichier 
+       echo -e "(print \"Hello World!\")" > $nom_fichier
+       ;;
+       "lsp") 
+       touch $nom_fichier 
+       echo -e "(print \"Hello World!\")" > $nom_fichier
        ;;
        "m") 
        touch $nom_fichier 
@@ -91,9 +147,17 @@ do
        touch $nom_fichier 
        echo -e "<!DOCTYPE html>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<html lang=\"fr\">\n\t<head>\n\t\t<title>Title of the page</title>\n\t</head>\n\t<body>\n\t\t<h1>Hello world!</h1>\n\t</body>\n</html>" > $nom_fichier
        ;;
+       "pl") 
+       touch $nom_fichier 
+       echo -e "#!/usr/bin/perl\nprint \"Hello World!\";" > $nom_fichier
+       ;;
        "py") 
        touch $nom_fichier 
        echo -e "def hello():\n\tprint(\"Hello World!\")\n\n\nif __name__ == \"__main__\":\n\thello()" > $nom_fichier
+       ;;
+       "r") 
+       touch $nom_fichier 
+       echo -e "cat(\"Hello World!\")" > $nom_fichier
        ;;
        "rb") 
        touch $nom_fichier 
@@ -111,9 +175,21 @@ do
        touch $nom_fichier 
        echo -e "echo \"Hello, World!\"" > $nom_fichier
        ;;
+       "swift") 
+       touch $nom_fichier 
+       echo -e "println(\"Hello World!\");" > $nom_fichier
+       ;;
+       "tcl") 
+       touch $nom_fichier 
+       echo -e "puts \"Hello World!\"" > $nom_fichier
+       ;;
        "tex") 
        touch $nom_fichier 
        echo -e "\documentclass[10pt,a4paper]{article}\n\usepackage[utf8]{inputenc}\n\usepackage[french]{babel}\n\usepackage[T1]{fontenc}\n\usepackage{amsmath}\n\usepackage{amsfonts}\n\usepackage{amssymb}\n\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}\n\n\\\begin{document}\nHello World!\n\\\end{document}" > $nom_fichier
+       ;;
+       "ts") 
+       touch $nom_fichier 
+       echo -e "console.log \"Hello World!\"" > $nom_fichier
        ;;
     esac
 done
