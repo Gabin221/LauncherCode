@@ -11,13 +11,25 @@ do
        touch $nom_fichier 
        echo -e "#include <stdio.h>\n\nint main() {\n\tprintf(\"Hello, World!\\\n\");\n\treturn 0;\n}" > $nom_fichier
        ;;
+       "cbl") 
+       touch $nom_fichier 
+       echo -e "IDENTIFICATION DIVISION.\nPROGRAM-ID. Hello-world.\nPROCEDURE DIVISION.\n\tDISPLAY \"Hello World!\".    ." > $nom_fichier
+       ;;
        "cc") 
        touch $nom_fichier 
        echo -e "#include <iostream>\n\nusing namespace std;\n\nint main() {\n\tcout << \"Hello World!\" << endl;\n\treturn 0;\n}" > $nom_fichier
        ;;
+       "cob") 
+       touch $nom_fichier 
+       echo -e "IDENTIFICATION DIVISION.\nPROGRAM-ID. Hello-world.\nPROCEDURE DIVISION.\n\tDISPLAY \"Hello World!\".    ." > $nom_fichier
+       ;;
        "cpp") 
        touch $nom_fichier 
        echo -e "#include <iostream>\n\nusing namespace std;\n\nint main() {\n\tcout << \"Hello World!\" << endl;\n\treturn 0;\n}" > $nom_fichier
+       ;;
+       "cpy") 
+       touch $nom_fichier 
+       echo -e "IDENTIFICATION DIVISION.\nPROGRAM-ID. Hello-world.\nPROCEDURE DIVISION.\n\tDISPLAY \"Hello World!\".    ." > $nom_fichier
        ;;
        "cs") 
        touch $nom_fichier 
