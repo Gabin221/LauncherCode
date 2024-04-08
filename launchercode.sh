@@ -23,10 +23,17 @@ do
        touch $nom_fichier 
        echo -e "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\nusing System.Threading.Tasks;\n\nnamespace ConsoleApp1\n{\n\tclass Program\n\t{\n\tstatic void Main(string[] args)\n\t{\n\t\tConsole.WriteLine("Hello, world!");\n\t\tConsole.ReadLine();\n\t}\n\t}\n}" > $nom_fichier
        ;;
+       "go") 
+       touch $nom_fichier 
+       echo -e "package main\n\nimport "fmt";\n\nfunc main() {\n\tfmt.Println(\"Hello World!\")\n}" > $nom_fichier
+       ;;
        "html") 
        touch $nom_fichier 
        echo -e "<!DOCTYPE html>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<html lang=\"fr\">\n\t<head>\n\t\t<title>Title of the page</title>\n\t</head>\n\t<body>\n\t\t<h1>Hello world!</h1>\n\t</body>\n</html>" > $nom_fichier
        ;;
+       "java") 
+       touch $nom_fichier
+       echo -e "class HelloWorld {\n\tpublic static void main(String args[])\n\t{\n\t\tSystem.out.println(\"Hello, World\");\n\t}\n}" > $nom_fichier
        "kt") 
        touch $nom_fichier 
        echo -e "fun main(args : Array<String>) {\n\tprintln(\"Hello, World!\")\n}" > $nom_fichier
